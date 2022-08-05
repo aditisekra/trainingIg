@@ -56,6 +56,7 @@ div #about{
     
 }
 header{
+    position:fixed;
     width: 100%;
     height: 7vh;
     background-color: rgba(211,207,196,255);
