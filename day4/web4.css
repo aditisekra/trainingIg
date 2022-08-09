@@ -77,6 +77,7 @@
     display: flex;
     justify-content: space-between;
 
+
 }
 .wheel1,.wheel2{
     animation: wheel 1s linear infinite;
