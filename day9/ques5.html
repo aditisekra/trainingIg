@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: aqua;
+            font-size:30px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(6, 5, 5);">
+    <script>
+        var people = [
+        { name: "Aditi", age: 18 },
+        { name: "Abhishek", age: 23 },
+        { name: "Aryan", age: 21 },
+        { name: "Chitransha", age: 22 },
+        { name: "enemy", age: 13 },
+];
+
+// var result=[];
+var result=people.filter((i)=>i.age<25).sort(function(n1,n2){return n2.age-n1.age});
+
+var result1=result.map((i)=>
+                        document.write("<h1>Name : "+i.name +" , "+ "Age : "+ i.age +"<br></h>")
+                    );
+        </script>
+</body>
+</html>

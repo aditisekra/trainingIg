@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8 Question 2</title>
+    <style>
+        body{
+            background-color: plum;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: black; font-size: 50px; font-weight: bold;">Write a code to Copy an array into another using forEach()</h1>
+    <script>
+        function copy(){
+            var a=[1,2,3,4,5,6,7,8,9,10];
+            var newA=[];
+            a.forEach(function(item){
+                newA.push(item);
+            });
+            document.write('<h1 style="text-align: center; color: black; font-size: 50px; font-weight: bold;"> New array with values same as that of <br>'+ a +' is: <br> <br>'+newA+'</h1>');
+        }
+        copy();
+    </script>
+</body>
+</html>
