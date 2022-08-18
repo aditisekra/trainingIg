@@ -1,0 +1,111 @@
+body {
+    background-image: url("bg10.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: inherit;
+  }
+  
+  h1 {
+    font-family: cursive;
+    text-align: center;
+    font-size: 82px;
+    font-weight: bolder;
+    color: orangered;
+    margin-top: 0%;
+  }
+  
+  #_mole_ {
+    position: absolute;
+    left: 42%;
+    top: 28%;
+  }
+  #_mud_ {
+    position: fixed;
+    left: 35%;
+    width: 450px;
+    top: 44%;
+  }
+  #_start {
+    height: 70px;
+    width: 180px;
+    background-color: darkgreen;
+    color: floralwhite;
+    font-size: x-large;
+    font-weight: bold;
+    border: floralwhite solid 4px;
+    border-radius: 32px;
+    position: absolute;
+    top: 85%;
+    left: 43%;
+    cursor: pointer;
+  }
+  
+  .dirt {
+    width: 170px;
+    height: 80px;
+    position: absolute;
+    z-index: 1;
+    visibility: hidden;
+  }
+  #dirt1 {
+    top: 72%;
+    left: 20%;
+  }
+  #dirt2 {
+    top: 90%;
+    left: 20%;
+  }
+  #dirt3 {
+    top: 72%;
+    left: 45%;
+  }
+  #dirt4 {
+    top: 90%;
+    left: 45%;
+  }
+  #dirt5 {
+    top: 72%;
+    left: 65%;
+  }
+  #dirt6 {
+    top: 90%;
+    left: 65%;
+  }
+  .points {
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    visibility: hidden;
+  }
+  .mole {
+    position: absolute;
+    height: 120px;
+    width: 80px;
+    visibility: hidden;
+  }
+  #mole1 {
+    top: 50%;
+    left: 22%;
+  }
+  #mole3 {
+    top: 66%;
+    left: 47%;
+  }
+  #mole5 {
+    top: 66%;
+    left: 67%;
+  }
+  #mole2 {
+    top: 84%;
+    left: 22%;
+  }
+  #mole4 {
+    top: 84%;
+    left: 47%;
+  }
+  
+  #mole6 {
+    top: 84%;
+    left: 67%;
+  }
