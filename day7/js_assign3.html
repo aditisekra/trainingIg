@@ -1,28 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <style>
-        
-        h1{
-            color: black;
-            
-
-        }
-        a{
-            text-decoration: none;
-        }
+      h1 {
+        color: black;
+      }
+      a {
+        text-decoration: none;
+      }
+      pre {
+        font-size: 20px;
+      }
     </style>
-</head>
-<body>
-    <a href="ques1.html"><h1>Ques 1</h1></a>
-    <a href="ques2.html"><h1>Ques 2</h1></a>
-    <a href="ques3.html"><h1>Ques 3</h1></a>
-    <a href="ques4.html"><h1>Ques 4</h1></a>
-    <a href="ques5.html"><h1>Ques 5</h1></a>
-</body>
+  </head>
+  <body>
+    <a href="ques1.html">
+      <h1>Ques 1</h1>
+      <pre>
+        let a=prompt("Enter the string..");
+        var b=a.trim();
+        document.write('Result after removing the extra whitespace is: '+(b));
+    </pre>
+    </a>
+    <a href="ques2.html">
+      <h1>Ques 2</h1>
+      <pre>
+        function copy(){
+          var a=[1,2,3,4,5,6,7,8,9,10];
+          var newA=[];
+          a.forEach(function(item){
+              newA.push(item);
+          });
+          document.write(' New array with values same as that of'+ a +' is: '+newA+'');}
+      copy();
+      </pre>
+    
+    
+    </a>
+    <a href="ques3.html">
+      <h1>Ques 3</h1>
+      <pre>
+        var line=document.createElement('hr');
+        
+        function check(){
+                var marks=[100,95,90,85,80,75,70,65,60,55,50,45,40,35,30,25,20,15,10,5];
+                document.write('Marks are:' + marks+' </h1>');
+                document.write("");
+                marks.forEach(function(element){
+                if(element>=60)
+                {
+                    document.write(' Student Passed with marks: ' + element+'');
+                    document.write("");
+                    
+                }
+                else{
+                    document.write('Student Failed with a gap of marks: ' + (60-element)+'</h3>');
+                    document.write("");
+                }
+            });
+        }
+        check();
+      </pre>
+    
+    
+    </a>
+    <a href="ques4.html">
+      <h1>Ques 4</h1>
+      <pre>
+        var a=[1,2,3,4,["Hello","World"],[true,false]];
+        document.write('Original Array:' + a+' </h1>');
+        a[4][2]="How are you";
+        a[5][2]=[1,2,["Hello"]];
+        document.write('New Array:' + a+' </h1>');
+      </pre>
+    </a>
+    <a href="ques5.html">
+      <h1>Ques 5</h1>
+      <pre>
+        var a=["Hello","how","are","you"];
+            document.write('Original Array: ' + a+' </h1>');
+            a.sort();
+            a.reverse();
+            document.write('New Array sorted in reversed order is: ' + a+' ');
+      </pre>
+    
+    
+    </a>
+  </body>
 </html>

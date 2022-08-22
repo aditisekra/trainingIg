@@ -1,0 +1,100 @@
+/* ------------Initial Phase CSS--------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-image: url("bg.jpg");
+    color: black;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+  }
+  header,
+  form {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header {
+    font-size: 70px;
+    font-weight: bolder;
+  }
+  
+  form input,
+  form button {
+
+    padding: 10px;
+    border: 3px solid black;
+    font-size: 24px;
+    color: white;
+    background: #008e3e;
+    outline: none;
+  }
+  form button {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+  }
+  form button:hover {
+    color: #008e3e;
+    background-color: black;
+  }
+  
+  /* ----------------New List Container----------------- */
+  .todo-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    list-style: none;
+    min-width:25%;
+}
+.tododiv
+{
+  border: 2px solid black;;
+    background-color: #008e3e;
+    font-size: 24px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.tododiv li{
+    flex: 1;
+}
+.tododiv_check{
+    color: white;
+    background-color: teal;
+    border: none;
+    padding: 16px;
+    outline: none;
+    font-size: 16px;
+}
+.tododiv_end{
+    color: white;
+    background-color: red;
+    padding: 16px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    
+}
+.tododiv_item
+{
+    margin: 0px 10px;
+}
+
+.fa
+{
+    pointer-events: none;
+}
+.done{
+    text-decoration: line-through;
+    opacity: .5;
+}

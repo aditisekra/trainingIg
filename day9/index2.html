@@ -1,28 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <style>
-        
-        h1{
-            color: black;
-            
-
-        }
-        a{
-            text-decoration: none;
-        }
+      h1 {
+        color: black;
+      }
+      a {
+        text-decoration: none;
+      }
     </style>
-</head>
-<body>
-    <a href="ques1.html"><h1>Ques 1</h1></a>
-    <a href="ques2.html"><h1>Ques 2</h1></a>
-    <a href="ques3.html"><h1>Ques 3</h1></a>
-    <a href="ques4.html"><h1>Ques 4</h1></a>
-    <a href="ques5.html"><h1>Ques 5</h1></a>
-</body>
+  </head>
+  <body>
+    <a href="ques1.html">
+      <h1>Ques 1</h1>
+      <pre>
+            var person = {
+                details: function (city, state, country) {
+                  var name = this.fname + " " + this.lname;
+                  return (
+                    "Name: " +
+                    name +
+                    " City:  " +
+                    city +
+                    "State: " +
+                    state +
+                    "Country: " +
+                    country
+                  );
+                },
+              };
+        
+              var obj = {
+                fname: prompt("Enter your First Name "),
+                lname: prompt("Enter your Last Name "),
+              };
+              var city = prompt("Enter your City ");
+              var state = prompt("Enter your State ");
+              var country = prompt("Enter your Country ");
+              var arr = [city, state, country];
+              //using call and apply
+              document.body.innerHTML =
+                " Using call" +
+                person.details.call(obj, city, state, country) +
+                "Using apply" +
+                person.details.apply(obj, arr) +"";
+        </pre>
+    </a>
+    <a href="ques2.html">
+      <h1>Ques 2</h1>
+      <pre>
+        var arr=[8,27,64,125,216];
+        var result = arr.map((i)=>Math.cbrt(i));
+        document.body.innerHTML=" Array: "+ arr +"Cube Root: "+ result +"";
+      </pre>
+    </a>
+    <a href="ques3.html">
+        <h1>Ques 3</h1>
+        <pre>
+            var flag=0;
+            var str=setInterval(fun,300);
+            function fun(){
+            flag++;
+            document.write(' Hii guys  Welcome to Ingenuity!!');
+            if(flag==10)clearInterval(str);}
+       </pre>
+    
+    
+    </a>
+    <a href="ques4.html">
+        <h1>Ques 4</h1>
+        <pre>
+            var people = [
+        { name: "Aditi", age: 20 },
+        { name: "Abhishek", age: 21 },
+        { name: "Aryan", age: 21 },
+        { name: "Chitransha", age: 18 },
+        { name: "enemy", age: 13 },
+      ];
+
+      // var result=[];
+      var result = people.map((i) => {
+        if (i.age >= 18)
+          document.write(
+            "Name : " + i.name + ", Age : " + i.age + ""
+          );
+      });
+        </pre>
+    
+    
+    </a>
+    <a href="ques5.html">
+        <h1>Ques 5</h1>
+        please check this by inspect!
+    </a>
+  </body>
 </html>
