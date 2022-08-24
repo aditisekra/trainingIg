@@ -54,3 +54,11 @@ select {
   margin-bottom: 10px;
   border: none;
 }
+
+button{
+    padding: 15px;
+    background-color: chocolate;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
