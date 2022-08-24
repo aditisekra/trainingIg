@@ -49,6 +49,7 @@
 var inp=document.querySelector('.todo-input');
 var btn=document.querySelector('button');
 var list=document.querySelector('.todo-list');
+
 btn.onclick = function crtodo(e){
     e.preventDefault();
     if(inp.value.length>0){
